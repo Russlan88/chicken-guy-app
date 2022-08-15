@@ -17,6 +17,11 @@ body {
 html,
 body {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.bg-calc {
+	width: calc(650px - 15%);
 }
 
 @tailwind base;
