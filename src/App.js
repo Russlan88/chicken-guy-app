@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import { actionType } from './context/reducer';
 
 function App() {
-	const [dispatch] = useStateValue();
+	const [{ foodItems }, dispatch] = useStateValue();
 
 	const fetchData = async () => {
 		await getAllFoodItems().then((data) => {
